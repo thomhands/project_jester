@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+<style>p {text-align: center;}</style>
+<style>button {text-align: center;}</style>
+<style>.modal-dialog, .modal-content{height: 100%; width: 100%; }</style>
+  <title>Jester User Form </title>
+</head>
+
+<body>
+  <h1>User Form Version 1</h1>
+  <!-- Upload Method-->
+  <p class="centre">------------------------------- initialise -------------------------------------</p>
+  <main class="container-fluid">
+    <section class="row">
+      <div class="col">
+        <form>
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Name</label>
+            <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Joe Doe">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">Upload Method</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option>Drive</option>
+              <option>Signiant</option>
+            </select>
+          </div>
+        </form>
+      </div>
+      </div>
+    </section>
+     <p class="centre">------------------------------- IF DRIVE SELECTED -------------------------------------</p>
+    <!-- If Drive upload-->
+    <section class="row">
+      <div class="col">
+        <form>
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">Drive</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option>pw01</option>
+              <option>pw02</option>
+            </select>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- if Signiant upload-->
+         <p class="centre">------------------------------- IF SIGNIANT SELECTED -------------------------------------</p>
+    <section class="row">
+      <div class="col">
+        <form>
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Signiant Package Number</label>
+            <input type="name" class="form-control" id="exampleFormControlInput1"
+              placeholder="####_signiant_package_###">
+          </div>
+        </form>
+        <form>
+        <p class="centre">------------------------------- ONCE SEND TYPE SELECTED -------------------------------------</p>
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">Upload Type</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option>Full Body</option>
+              <option>Prop</option>
+              <option>Lidar / Env</option>
+              <option>Dorothy</option>
+              <option>Rig Reference</option>
+            </select>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- If FB chosen-->
+         <p class="centre">------------------------------- IF FULL BODY SELECTED -------------------------------------</p>
+    <h1>Full Body</h1>
+    <section class="row">
+      <div class="col">
+        <form>
+          <div class="form-row">
+            <div class="col">
+              <label for="exampleFormControlSelect1">Production</label>
+              <select class="form-control" id="exampleFormControlSelect1">
+                <option>prod01</option>
+                <option>prod02</option>
+                <option>prod03</option>
+                <option>prod04</option>
+                <option>prod05</option>
+              </select>
+              <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">New Production</label>
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlInput1">New Production</label>
+                <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="New Production">
+              </div>
+            </div>
+            <div class="col">
+              <label for="exampleFormControlSelect1">Shoot Day</label>
+              <input type="text" class="form-control" placeholder="####_shoot_day_###_xx">
+            </div>
+            <div class="col">
+              <label for="exampleFormControlSelect1">Size</label>
+              <input type="number" class="form-control" placeholder="0.00">
+            </div>
+            <div class="form-row">
+              <div class="col">
+                <label for="exampleFormControlSelect1">Size</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>KB</option>
+                  <option>MB</option>
+                  <option>GB</option>
+                  <option>TB</option>
+                </select>
+              </div>
+              <div class="col">
+                <label for="exampleFormControlSelect1">File Count</label>
+                <input type="number" class="form-control" placeholder="0">
+              </div>
+              <div class="form-row">
+                <div class="col">
+                  <label for="exampleFormControlSelect1">Rig</label>
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option>X01</option>
+                    <option>X02</option>
+                    <option>X03</option>
+                    <option>X04</option>
+                  </select>
+                </div>
+        </form>
+      </div>
+    </section>
+    <div style="height: 10pt;"></div>
+             <p class="centre">------------------------------- IF PROP SELECTED -------------------------------------</p>
+    <!-- If Prop chosen-->
+    <h1>Prop</h1>
+    <section class="row">
+      <div class="col">
+        <div style="width: 100%;">
+          <form>
+            <div class="form-row">
+              <div class="col">
+                <label for="exampleFormControlSelect1">Production</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>prod01</option>
+                  <option>prod02</option>
+                  <option>prod03</option>
+                  <option>prod04</option>
+                  <option>prod05</option>
+                </select>
+                <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">New Production</label>
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlInput1">New Production</label>
+                  <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="New Production">
+                </div>
+              </div>
+              <div class="col">
+                <label for="exampleFormControlSelect1">Shoot Day</label>
+                <input type="text" class="form-control" placeholder="####_prop_shoot_day_###">
+              </div>
+              <div class="col">
+                <label for="exampleFormControlSelect1">Size</label>
+                <input type="number" class="form-control" placeholder="0.00">
+              </div>
+              <div class="form-row">
+                <div class="col">
+                  <label for="exampleFormControlSelect1">Size</label>
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option>KB</option>
+                    <option>MB</option>
+                    <option>GB</option>
+                    <option>TB</option>
+                  </select>
+                </div>
+                <div class="col">
+                  <label for="exampleFormControlSelect1">File Count</label>
+                  <input type="number" class="form-control" placeholder="0">
+                </div>
+                <div class="form-row">
+                  <div class="col">
+                    <label for="exampleFormControlSelect1">Rig</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>P01</option>
+                      <option>P02</option>
+                      <option>P03</option>
+                      <option>Freehand</option>
+                    </select>
+                  </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!--  If Dorothy Selected-->
+                 <p class="centre">------------------------------- IF DOROTHY SELECTED -------------------------------------</p>
+    <h1>Dorothy</h1>
+    <section class="row">
+      <div class="col">
+        <div style="width: 100%;">
+          <form>
+            <div class="form-row">
+              <div class="col">
+                <label for="exampleFormControlSelect1">Production</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>prod01</option>
+                  <option>prod02</option>
+                  <option>prod03</option>
+                  <option>prod04</option>
+                  <option>prod05</option>
+                </select>
+                <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">New Production</label>
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlInput1">New Production</label>
+                  <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="New Production">
+                </div>
+              </div>
+              <div class="col">
+                <label for="exampleFormControlSelect1">Shoot Day</label>
+                <input type="text" class="form-control" placeholder="####_dorothy_shoot_day_###">
+              </div>
+              <div class="col">
+                <label for="exampleFormControlSelect1">Size</label>
+                <input type="number" class="form-control" placeholder="0.00">
+              </div>
+              <div class="form-row">
+                <div class="col">
+                  <label for="exampleFormControlSelect1">Size</label>
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option>KB</option>
+                    <option>MB</option>
+                    <option>GB</option>
+                    <option>TB</option>
+                  </select>
+                </div>
+                <div class="col">
+                  <label for="exampleFormControlSelect1">File Count</label>
+                  <input type="number" class="form-control" placeholder="0">
+                </div>
+                <div class="form-row">
+                  <div class="col">
+                    <label for="exampleFormControlSelect1">Rig</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>Dorothy 1</option>
+                      <option>Dorothy 2</option>
+                    </select>
+                  </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!--  If Lidar/Env Selected-->
+                 <p class="centre">------------------------------- IF LIDAR SELECTED -------------------------------------</p>
+    <h1>LiDAR/Env</h1>
+    <section class="row">
+      <div class="col">
+        <div style="width: 100%;">
+          <form>
+            <div class="form-row">
+              <div class="col">
+                <label for="exampleFormControlSelect1">Production</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>prod01</option>
+                  <option>prod02</option>
+                  <option>prod03</option>
+                  <option>prod04</option>
+                  <option>prod05</option>
+                </select>
+                <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">New Production</label>
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlInput1">New Production</label>
+                  <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="New Production">
+                </div>
+              </div>
+              <div>
+                <label for="exampleFormControlSelect1">Data Type</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>RAW LiDAR</option>
+                  <option>Textures</option>
+                  <option>WIP LiDAR</option>
+                  <option>Photoscan</option>
+                </select>
+              </div>
+              <div class="col">
+                <label for="exampleFormControlSelect1">Scan Name</label>
+                <input type="text" class="form-control" placeholder="####_scan_name">
+              </div>
+              <div class="col">
+                <label for="exampleFormControlSelect1">Size</label>
+                <input type="number" class="form-control" placeholder="0.00">
+              </div>
+              <div class="form-row">
+                <div class="col">
+                  <label for="exampleFormControlSelect1">Size</label>
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option>KB</option>
+                    <option>MB</option>
+                    <option>GB</option>
+                    <option>TB</option>
+                  </select>
+                </div>
+          </form>
+        </div>
+      </div>
+    </section>
+                 <p class="centre">------------------------------- IF RIG REFERENCE SELECTED -------------------------------------</p>
+    <!--  If Rig Reference Selected-->
+    <h1>Rig Reference</h1>
+    <section class="row">
+      <div class="col">
+        <div style="width: 100%;">
+          <form>
+            <div class="form-row">
+              <div class="col">
+                <label for="exampleFormControlSelect1">Production</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>prod01</option>
+                  <option>prod02</option>
+                  <option>prod03</option>
+                  <option>prod04</option>
+                  <option>prod05</option>
+                </select>
+                <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">New Production</label>
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlInput1">New Production</label>
+                  <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="New Production">
+                </div>
+              </div>
+              <div class="col">
+                <label for="exampleFormControlSelect1">Reference Type</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>Full Body</option>
+                  <option>Prop</option>
+                  <option>Dorothy</option>
+                </select>
+              </div>
+          </form>
+        </div>
+      </div>
+    </section>
+                 <p class="centre">------------------------------- IF FULLBODY SELECTED FOR SUBFRORM-------------------------------------</p>
+    <!-- If FB rig reference is Selected-->
+    <h2>Full Body Rig Reference</h2>
+    <section class="row">
+      <div class="col">
+        <div style="width: 100%;">
+          <form>
+            <div class="form-row">
+              <div class="col">
+                <label for="exampleFormControlSelect1">Shoot Day</label>
+                <input type="text" class="form-control" placeholder="####_xseries_reference">
+                <div class="form-group form-check">
+                </div>
+                <!-- Subform for internals-->
+                <!-- Charts-->
+                <label class="mr-2" for="exampleFormControlInput1">Charts</label>
+                <section class="row">
+                  <div class="form-inline">
+                    <input type="name" class="form-control" id="exampleFormControlInput1"
+                      placeholder="####_xseries_charts">
+                    <input class="ml-2 form-check-input" type="checkbox" id="inlineFormCheck">
+                    <label class="ml-1 form-check-label" for="inlineFormCheck">To be shot</label>
+                    <input class="ml-2 form-check-input" type="checkbox" id="inlineFormCheck">
+                    <label class="ml-1 form-check-label" for="inlineFormCheck"> Duplicate</label>
+                    <label class="ml-2" for="exampleFormControlSelect1">Date</label>
+                    <input type="number" class="ml-2 form-control" placeholder="230816">
+                </section>
+                <!--HDRI-->
+                <label for="exampleFormControlInput1">HDRI</label>
+                <section class="row">
+                  <div class="form-inline">
+
+                    <input type="name" class="form-control" id="exampleFormControlInput1"
+                      placeholder="####_xseries_hdri">
+                    <input class="ml-2 form-check-input" type="checkbox" id="inlineFormCheck">
+                    <label class="ml-1 form-check-label" for="inlineFormCheck">To be shot</label>
+                    <input class="ml-2 form-check-input" type="checkbox" id="inlineFormCheck">
+                    <label class="ml-1 form-check-label" for="inlineFormCheck"> Duplicate</label>
+                    <label class="ml-2" for="exampleFormControlSelect1">Date</label>
+                    <input type="number" class="ml-2 form-control" placeholder="230816">
+                  </div>
+                </section>
+                <!--LiDAR-->
+                <label for="exampleFormControlInput1">LiDAR</label>
+                <section class="row">
+                  <div class="form-inline">
+                    <input type="name" class="form-control" id="exampleFormControlInput1"
+                      placeholder="####_xseries_lidar">
+                    <input class="ml-2 form-check-input" type="checkbox" id="inlineFormCheck">
+                    <label class="ml-1 form-check-label" for="inlineFormCheck">To be shot</label>
+                    <input class="ml-2 form-check-input" type="checkbox" id="inlineFormCheck">
+                    <label class="ml-1 form-check-label" for="inlineFormCheck"> Duplicate</label>
+                    <label class="ml-2" for="exampleFormControlSelect1">Date</label>
+                    <input type="number" class="ml-2 form-control" placeholder="230816">
+                  </div>
+                </section>
+              </div>
+              <!--End of SubForm-->
+              <div class="col">
+                <label for="exampleFormControlSelect1">Size</label>
+                <input type="number" class="form-control" placeholder="0.00">
+              </div>
+              <div class="form-row">
+                <div class="col">
+                  <label for="exampleFormControlSelect1">Size</label>
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option>KB</option>
+                    <option>MB</option>
+                    <option>GB</option>
+                    <option>TB</option>
+                  </select>
+                </div>
+                <div class="col">
+                  <label for="exampleFormControlSelect1">File Count</label>
+                  <input type="number" class="form-control" placeholder="0">
+                </div>
+                <div class="form-row">
+                  <div class="col">
+                    <label for="exampleFormControlSelect1">Rig</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>X01</option>
+                      <option>X02</option>
+                      <option>X03</option>
+                    </select>
+                  </div>
+          </form>
+        </div>
+      </div>
+    </section>
+                 <p class="centre">------------------------------- IF PROP SELECTED FOR SUBFRORM-------------------------------------</p>
+    <!-- If Prop rig reference is Selected-->
+    <h2>Prop Rig Reference</h2>
+    <section class="row">
+      <div class="col">
+        <div style="width: 100%;">
+          <form>
+            <div class="form-row">
+              <div class="col">
+                <label for="exampleFormControlSelect1">Shoot Day</label>
+                <input type="text" class="form-control" placeholder="####_prop_booth_reference">
+                <div class="form-group form-check">
+                </div>
+                <!-- Subform for internals-->
+                <!-- Charts-->
+                <!--HDRI-->
+                <label for="exampleFormControlInput1">HDRI</label>
+                <section class="row">
+                  <div class="form-inline">
+
+                    <input type="name" class="form-control" id="exampleFormControlInput1"
+                      placeholder="####_prop_booth_hdri">
+                    <input class="ml-2 form-check-input" type="checkbox" id="inlineFormCheck">
+                    <label class="ml-1 form-check-label" for="inlineFormCheck">To be shot</label>
+                    <input class="ml-2 form-check-input" type="checkbox" id="inlineFormCheck">
+                    <label class="ml-1 form-check-label" for="inlineFormCheck"> Duplicate</label>
+                    <label class="ml-2" for="exampleFormControlSelect1">Date</label>
+                    <input type="number" class="ml-2 form-control" placeholder="230816">
+                  </div>
+                </section>
+                <!--LiDAR-->
+                <label for="exampleFormControlInput1">LiDAR</label>
+                <section class="row">
+                  <div class="form-inline">
+                    <input type="name" class="form-control" id="exampleFormControlInput1"
+                      placeholder="####_prop_booth_lidar">
+                    <input class="ml-2 form-check-input" type="checkbox" id="inlineFormCheck">
+                    <label class="ml-1 form-check-label" for="inlineFormCheck">To be shot</label>
+                    <input class="ml-2 form-check-input" type="checkbox" id="inlineFormCheck">
+                    <label class="ml-1 form-check-label" for="inlineFormCheck"> Duplicate</label>
+                    <label class="ml-2" for="exampleFormControlSelect1">Date</label>
+                    <input type="number" class="ml-2 form-control" placeholder="230816">
+                  </div>
+                </section>
+              </div>
+              <!--End of SubForm-->
+              <div class="col">
+                <label for="exampleFormControlSelect1">Size</label>
+                <input type="number" class="form-control" placeholder="0.00">
+              </div>
+              <div class="form-row">
+                <div class="col">
+                  <label for="exampleFormControlSelect1">Size</label>
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option>KB</option>
+                    <option>MB</option>
+                    <option>GB</option>
+                    <option>TB</option>
+                  </select>
+                </div>
+                <div class="col">
+                  <label for="exampleFormControlSelect1">File Count</label>
+                  <input type="number" class="form-control" placeholder="0">
+                </div>
+                <div class="form-row">
+                  <div class="col">
+                    <label for="exampleFormControlSelect1">Rig</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>P01</option>
+                      <option>P02</option>
+                      <option>P03</option>
+                    </select>
+                  </div>
+          </form>
+        </div>
+      </div>
+    </section>
+                 <p class="centre">------------------------------- IF DOROTHY SELECTED FOR SUBFRORM-------------------------------------</p>
+
+    <!-- If Dorothy rig reference is Selected-->
+    <h2>Dorothy Rig Reference</h2>
+    <section class="row">
+      <div class="col">
+        <div style="width: 100%;">
+          <form>
+            <div class="form-row">
+              <div class="col">
+                <label for="exampleFormControlSelect1">Shoot Day</label>
+                <input type="text" class="form-control" placeholder="####_dorothy_reference">
+                <div class="form-group form-check">
+                </div>
+                <!-- Subform for internals-->
+                <!-- Charts-->
+                <label class="mr-2" for="exampleFormControlInput1">Charts</label>
+                <section class="row">
+                  <div class="form-inline">
+                    <input type="name" class="form-control" id="exampleFormControlInput1"
+                      placeholder="####_dorothy_charts">
+                    <input class="ml-2 form-check-input" type="checkbox" id="inlineFormCheck">
+                    <label class="ml-1 form-check-label" for="inlineFormCheck">To be shot</label>
+                    <input class="ml-2 form-check-input" type="checkbox" id="inlineFormCheck">
+                    <label class="ml-1 form-check-label" for="inlineFormCheck"> Duplicate</label>
+                    <label class="ml-2" for="exampleFormControlSelect1">Date</label>
+                    <input type="number" class="ml-2 form-control" placeholder="230816">
+                </section>
+                <!--HDRI-->
+                <label for="exampleFormControlInput1">HDRI</label>
+                <section class="row">
+                  <div class="form-inline">
+
+                    <input type="name" class="form-control" id="exampleFormControlInput1"
+                      placeholder="####_dorothy_hdri">
+                    <input class="ml-2 form-check-input" type="checkbox" id="inlineFormCheck">
+                    <label class="ml-1 form-check-label" for="inlineFormCheck">To be shot</label>
+                    <input class="ml-2 form-check-input" type="checkbox" id="inlineFormCheck">
+                    <label class="ml-1 form-check-label" for="inlineFormCheck"> Duplicate</label>
+                    <label class="ml-2" for="exampleFormControlSelect1">Date</label>
+                    <input type="number" class="ml-2 form-control" placeholder="230816">
+                  </div>
+                </section>
+                <!--LiDAR-->
+                <label for="exampleFormControlInput1">LiDAR</label>
+                <section class="row">
+                  <div class="form-inline">
+                    <input type="name" class="form-control" id="exampleFormControlInput1"
+                      placeholder="####_dorothy_lidar">
+                    <input class="ml-2 form-check-input" type="checkbox" id="inlineFormCheck">
+                    <label class="ml-1 form-check-label" for="inlineFormCheck">To be shot</label>
+                    <input class="ml-2 form-check-input" type="checkbox" id="inlineFormCheck">
+                    <label class="ml-1 form-check-label" for="inlineFormCheck"> Duplicate</label>
+                    <label class="ml-2" for="exampleFormControlSelect1">Date</label>
+                    <input type="number" class="ml-2 form-control" placeholder="230816">
+                  </div>
+                </section>
+              </div>
+              <!--End of SubForm-->
+              <div class="col">
+                <label for="exampleFormControlSelect1">Size</label>
+                <input type="number" class="form-control" placeholder="0.00">
+              </div>
+              <div class="form-row">
+                <div class="col">
+                  <label for="exampleFormControlSelect1">Size</label>
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option>KB</option>
+                    <option>MB</option>
+                    <option>GB</option>
+                    <option>TB</option>
+                  </select>
+                </div>
+                <div class="col">
+                  <label for="exampleFormControlSelect1">File Count</label>
+                  <input type="number" class="form-control" placeholder="0">
+                </div>
+                <div class="form-row">
+                  <div class="col">
+                    <label for="exampleFormControlSelect1">Rig</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>Dorothy 1</option>
+                      <option>Dorothy 2</option>
+                    </select>
+                  </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+<!-- Button trigger modal -->
+<div></div>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" onclick="load_home()">
+  View Draft
+</button>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Draft Email</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" id ="email-content">
+      <script>
+function load_home() {
+     document.getElementById("email-content").innerHTML='<object style="width: 100%; height: 100%;" type="text/html" data="email-output.html"></object>';
+}
+</script>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close to Amend</button>
+        <button type="button" class="btn btn-primary">Save and Create Draft</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  </main>
+  <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous">
+  </script>
+
+</body>
+
+</html>
